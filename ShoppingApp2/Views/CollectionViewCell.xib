@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="ShoppingApp2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="164" height="122"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="164" height="122"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b6n-ss-bHc">
+                        <rect key="frame" x="0.0" y="0.0" width="154" height="122"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="htc-s1-rVi">
+                                <rect key="frame" x="0.0" y="0.0" width="154" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="vSx-Dn-24e"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzl-Fi-7qt">
+                                <rect key="frame" x="0.0" y="80" width="154" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="flh-kC-Ovr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fzl-Fi-7qt" firstAttribute="leading" secondItem="b6n-ss-bHc" secondAttribute="leading" id="5AK-93-qbP"/>
+                            <constraint firstAttribute="trailing" secondItem="htc-s1-rVi" secondAttribute="trailing" id="7Vk-be-C3p"/>
+                            <constraint firstAttribute="trailing" secondItem="fzl-Fi-7qt" secondAttribute="trailing" id="Sfb-gB-81P"/>
+                            <constraint firstItem="htc-s1-rVi" firstAttribute="top" secondItem="b6n-ss-bHc" secondAttribute="top" id="YS8-WL-KGQ"/>
+                            <constraint firstAttribute="bottom" secondItem="fzl-Fi-7qt" secondAttribute="bottom" id="Ydm-Ix-C11"/>
+                            <constraint firstItem="htc-s1-rVi" firstAttribute="leading" secondItem="b6n-ss-bHc" secondAttribute="leading" id="as0-4j-OSj"/>
+                            <constraint firstItem="fzl-Fi-7qt" firstAttribute="top" secondItem="htc-s1-rVi" secondAttribute="bottom" id="ftk-QO-E2J"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="b6n-ss-bHc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7qw-SB-Sab"/>
+                <constraint firstAttribute="bottom" secondItem="b6n-ss-bHc" secondAttribute="bottom" id="UnQ-Y6-xb4"/>
+                <constraint firstAttribute="trailing" secondItem="b6n-ss-bHc" secondAttribute="trailing" constant="10" id="nr1-mA-WEW"/>
+                <constraint firstItem="b6n-ss-bHc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="uS2-0u-o4q"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="164" height="122"/>
+            <connections>
+                <outlet property="productImage" destination="htc-s1-rVi" id="qtX-9U-kUH"/>
+                <outlet property="productLabel" destination="fzl-Fi-7qt" id="0VM-Rz-7I2"/>
+            </connections>
+            <point key="canvasLocation" x="-57.971014492753625" y="121.20535714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>

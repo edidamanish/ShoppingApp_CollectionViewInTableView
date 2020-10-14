@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="230" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="ShoppingApp2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="468" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="468" height="230"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98T-nf-jEV">
+                        <rect key="frame" x="20" y="20" width="428" height="10"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="tDW-w6-BTY">
+                        <rect key="frame" x="20" y="50" width="448" height="150"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="WxQ-AU-OHX"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tMr-VN-4t6">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="tDW-w6-BTY" secondAttribute="bottom" constant="30" id="20w-os-RQ8"/>
+                    <constraint firstItem="tDW-w6-BTY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="7pp-Xy-RSG"/>
+                    <constraint firstItem="98T-nf-jEV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="9v9-XF-xov"/>
+                    <constraint firstItem="98T-nf-jEV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="NnN-e9-Bqn"/>
+                    <constraint firstAttribute="trailing" secondItem="tDW-w6-BTY" secondAttribute="trailing" id="RNv-ac-H4Z"/>
+                    <constraint firstItem="tDW-w6-BTY" firstAttribute="top" secondItem="98T-nf-jEV" secondAttribute="bottom" constant="20" id="iJU-eQ-KyE"/>
+                    <constraint firstAttribute="trailing" secondItem="98T-nf-jEV" secondAttribute="trailing" constant="20" id="nd5-eR-AGQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="categoryLabel" destination="98T-nf-jEV" id="DFd-BO-sxe"/>
+                <outlet property="collectionView" destination="tDW-w6-BTY" id="JOU-HZ-H0o"/>
+            </connections>
+            <point key="canvasLocation" x="-49.275362318840585" y="42.857142857142854"/>
+        </tableViewCell>
+    </objects>
+</document>
