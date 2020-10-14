@@ -84,8 +84,9 @@ extension TableViewCell: UICollectionViewDelegate, UICollectionViewDataSource{
     
 }
 
-extension TableViewCell: UICollectionViewDelegateFlowLayout{
+/*extension TableViewCell: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 120, height: 150)
     }
 }
+*/
